@@ -195,6 +195,10 @@
 #  pragma warning (disable : 4251) // disable exported dll function
 # endif
 
+#if defined(_CL_HAVE_PTHREAD)
+#include <pthread.h>
+#endif
+
 ////////////////////////////////////////////////////////
 //Class interfaces
 ////////////////////////////////////////////////////////
